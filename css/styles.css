@@ -29,6 +29,34 @@ body{
 }
 /* Navbar css START
 ============================================================================================ */
+.brand-logo-sm{
+  display: none;
+}
+.small-screen-nav{
+  display: none;
+}
+.nav-cont{
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 650px) {
+  .small-screen-nav{
+    display: block;
+  }
+
+  .big-screen-nav{
+    display: none;
+  }
+
+ 
+  
+ }  
+
+.navbar-dark{
+  background-color: #a2a8ae;
+}
+
+
 button.btn{
   background-color: #000;
   color: white;
@@ -61,7 +89,6 @@ button.btn-1{
 .nav-link{
   font-size: 1rem;
   color: #FFF;
-}
 /* Navbar css END
 ============================================================================================ */
 

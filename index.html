@@ -130,61 +130,44 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!--Nav bar start-->
-    <header role="banner">
 
-        <nav style = "color: rgba(255, 255, 255, 0.72);" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id = "navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-               <img  src="assets/images/logo.png" width="40%" height="26" alt = "Logo" class="d-inline-block align-top" alt="" style="margin-left: 20%;margin-right: 30%;margin-top: 5px; float: right;">
+ <!--Nav bar start-->
+ <nav class= "navbar navbar-dark navbar-expand-sm fixed-top nav-cust flex-column ">
+    <div class = "container nav-cont">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#Navbar'>
+                    <span class = "navbar-toggler-icon"></span>
             </button>
-
-            <div class = "container">
-
-                <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent" justify-content-end>
-                    <ul style = "margin-top: 9px" class="navbar-nav ml-auto">
-                        <li class="nav-item active px-lg-3" >
-                <a class=" nav-item active" href="#new" >
-                    <img  src="assets/images/logo.png" width="170" height="20" alt = "Logo" class="d-inline-block align-top" alt="" style="margin-right: 350px;  margin-top: 0%;">
-                </a></li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="index.html">+919999999999<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="./Contact/contact.html">CONTACT US<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active px-lg-3">
-                            <a class="nav-link" href="#"style="margin-right:100px">THEME<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-
-
-                    <ul style = "margin-top: 20px;" class="navbar-nav flex-row mx-auto">
-                        <li  style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 60px;">HOTELS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 40px;">TOURS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 40px;">GIFT CARDS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = "white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#" style="margin-right: 40px;">BLOGS<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li style = " white-space: nowrap;overflow: hidden;" class="nav-item active px-lg-5">
-                            <a class="nav-link" href="#">PARTNER WITH US<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-
-                </div>
+            <div class="offset-1 col-3 brand-logo">
+                <a class = "navbar-brand mr-auto" href="#">AGIXURY</a>
             </div>
-          </nav>
-    </header>
+            <div class="offset-3 col-5 collapse navbar-collapse" id="Navbar">
+                <ul class = "navbar-nav ">
+                    <li class="nav-item active"><a class = "nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="./aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="./contactus.html">Contact Us</a></li>
+                </ul>
+                <ul class = "navbar-nav justify-content-center small-screen-nav">
+                    <li class="nav-item active"><a class = "nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="./aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class = "nav-link" href="./contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+    </div>
+    <div>
+        <ul class = "navbar-nav justify-content-center big-screen-nav">
+            <li class="nav-item active"><a class = "nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class = "nav-link" href="./aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class = "nav-link" href="#">Menu</a></li>
+            <li class="nav-item"><a class = "nav-link" href="./contactus.html">Contact Us</a></li>
+        </ul>
+
+    </div>
+</nav>
+
 <!--End of Navbar-->
+
 
 
 <!-- HEADER BEGINS HERE -->
