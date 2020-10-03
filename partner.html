@@ -153,5 +153,60 @@
  </footer>
 <!-- Footer End -->
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('html').css('overflow-x', 'initial');
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 10) {
+                $('#navbar-top').addClass('floatingNav');
+                $('#navbar-bottom').addClass('floatingNav');
+            } else {
+                $('#navbar-top').removeClass('floatingNav');
+                $('#navbar-bottom').removeClass('floatingNav');
+            }
+        });
+       let toggler = document.querySelector(".menu-toggle");
+       let nav = document.querySelector(".nav-2");
+       let bottom_nav_iteam = document.querySelectorAll(".about");
+
+
+
+        // ASINGN EVENTS
+        toggler.addEventListener("click",do_task);
+
+        // FUNCTION
+
+        function do_task(){
+            toggler.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+    </script>
+     <script>
+        $('html').css('overflow-x', 'initial');
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 10) {
+                $('#navbar-top').addClass('floatingNav');
+                $('#navbar-bottom').addClass('floatingNav');
+            } else {
+                $('#navbar-top').removeClass('floatingNav');
+                $('#navbar-bottom').removeClass('floatingNav');
+            }
+        });
+    </script>
+     <script type="text/javascript">
+        $(document).ready(function(){
+                    $("#btnShowHide").click(function(){
+                        $("#advance-search").toggle();
+                    });
+                });
+        $('#btnShowHide').click(function(e){
+        e.preventDefault();
+        // Code goes here
+    });
+    </script>
+
 
 </html>
